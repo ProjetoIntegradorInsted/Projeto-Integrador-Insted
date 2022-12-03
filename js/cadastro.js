@@ -7,6 +7,7 @@ let campoSenha = document.querySelector("#campo_senha");
 let campoConfirmacaoSenha = document.querySelector("#confirmacao_senha")
 let campoNome = document.querySelector("#nome");
 let campoAlertaNome = document.querySelector(".alerta__nome");
+let campoAlertaCampoInvalido = document.querySelector(".alerta__campoInvalido");
 let campoEmail = document.querySelector("#email");
 let campoConfirmacaoEmail = document.querySelector("#confirmacao_email");
 let cpf = document.querySelector("#cpf");
@@ -119,8 +120,23 @@ function validaSenha(){
     }
 }
 
+// CRIEI ESSA FUNÇÃO E "QUEBREI" A VALIDAÇÃO [VERIFICAR] - By: SÉRGIO 
+function validaPreenchimentoCampos(){
+    let alerta = document.querySelector(".alerta__campoInvalido");
+    if ((campoNome.value == null) || (campoCpf.value == null) || (campoEmail.value == null) || (campoSenha.value == null)) {
+        alerta.textContent = "Há Campos obrigatórios não preenchido.";
+        alerta.classList.add("sucesso");
+        alerta.classList.add("erro");
+        return false;
+    } else {
+        alerta.classList.remove("erro");
+        alerta.classList.add("sucesso");
+        return true;
+    }
+}
+
 botaoProximo.addEventListener("click", function(){
-    if ( validaNome() && validaCpf() && validaEmail() && validaSenha()) {
+    if ( validaNome() && validaCpf() && validaEmail() && validaSenha() && validaPreenchimentoCampos()) {
         
         conteudoForm1.classList.remove("d-flex");
         conteudoForm1.classList.remove("flex-colunm");
