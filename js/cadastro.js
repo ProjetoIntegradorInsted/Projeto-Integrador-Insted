@@ -123,8 +123,8 @@ function validaSenha(){
 // CRIEI ESSA FUNÇÃO E "QUEBREI" A VALIDAÇÃO [VERIFICAR] - By: SÉRGIO 
 function validaPreenchimentoCampos(){
     let alerta = document.querySelector(".alerta__campoInvalido");
-    if ((campoNome.value == null) || (campoCpf.value == null) || (campoEmail.value == null) || (campoSenha.value == null)) {
-        alerta.textContent = "Há Campos obrigatórios não preenchido.";
+    if ((campoNome.value == "") || (campoCpf.value == "") || (campoEmail.value == "") || (campoSenha.value == "")) {
+        alerta.textContent = "Há Campos obrigatórios não preenchido(s).";
         alerta.classList.add("sucesso");
         alerta.classList.add("erro");
         return false;
@@ -136,7 +136,7 @@ function validaPreenchimentoCampos(){
 }
 
 botaoProximo.addEventListener("click", function(){
-    if ( validaNome() && validaCpf() && validaEmail() && validaSenha() && validaPreenchimentoCampos()) {
+    if ( validaNome() && validaCpf() && validaEmail() && validaSenha()) {
         
         conteudoForm1.classList.remove("d-flex");
         conteudoForm1.classList.remove("flex-colunm");

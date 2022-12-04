@@ -53,84 +53,86 @@ body {
   padding: 2px 20px;
   max-width: 350px;
 }
+
 .esconder {
   display: none;
 }
 
-.botaoProximo{
+.botaoProximo {
   border-radius: 2rem;
   padding: 2px 15px;
   margin: 5px;
-  background-color:rgb(116, 9, 84);
+  background-color: rgb(116, 9, 84);
   color: white;
   border: none;
   text-decoration: none;
 }
 
-.botaoProximo:hover{
+.botaoProximo:hover {
   color: white;
 }
 
-.botaoVoltar{
+.botaoVoltar {
   border-radius: 2rem;
   padding: 2px 15px;
   margin: 5px;
-  background-color:rgb(116, 9, 84);
+  background-color: rgb(116, 9, 84);
   color: white;
   text-decoration: none;
 }
 
-.botaoVoltar:hover{
+.botaoVoltar:hover {
   color: white;
 }
 
-.botaoFinalizarCadastro{
+.botaoFinalizarCadastro {
   border-radius: 2rem;
   padding: 2px 15px;
   margin: 5px;
-  background-color:rgb(116, 9, 84);
+  background-color: rgb(116, 9, 84);
   color: white;
   text-decoration: none;
 }
 
-.botaoLogar{
+.botaoLogar {
   border-radius: 2rem;
   padding: 2px 15px;
   margin: 5px;
-  background-color:rgb(116, 9, 84);
+  background-color: rgb(116, 9, 84);
   color: white;
   text-decoration: none;
 }
 
-.login{
+.login {
   text-align: center;
 }
 
-.campoLogar{
+.campoLogar {
   border-radius: 2rem;
   max-width: 350px;
 }
 
-.selecionarBalada{
+.selecionarBalada {
   text-decoration: none;
   color: black;
 }
 
-.semConta{
+.semConta {
   border-radius: 2rem;
   padding: 2px 15px;
   margin: 5px;
-  background-color:rgb(116, 9, 84);
+  background-color: rgb(116, 9, 84);
   color: white;
   text-decoration: none;
 }
-.imagemPerfil{
+
+.imagemPerfil {
   border-radius: 100rem;
   max-width: 150px;
   margin: auto;
 }
 
-.card-text-balada{
+.card-text-balada {
   font-size: 12px;
 }
 
@@ -141,3 +143,45 @@ filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104
 filter: blur(0px) brightness(100%) contrast(100%) drop-shadow(3px 3px 1px #00b3ff) grayscale(0%) hue-rotate(50deg) invert(0%) opacity(100%) saturate(100%) sepia(0%);
 } */
 
+
+/* Buscador de balada */
+
+input {
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, - 50%);
+  color: white;
+  font-size: 16px;
+  background: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  border: solid 3px #9AB6FD;
+  outline: none;
+  border-radius: 35px;
+  transition: all 0.5s;
+  box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0.2), 0 6px 20px 0 #9AB6FD;
+}
+
+input ::placeholder {
+  color: #efefef;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
+input:focus::placeholder {
+  opacity: 1;
+}
+
+input:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #FFB870;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0.2), 0 6px 20px 0 #FFB870;
+}
+
+/* Fim do Buscador de balada */
