@@ -136,7 +136,7 @@ function validaPreenchimentoCampos(){
 }
 
 botaoProximo.addEventListener("click", function(){
-    if ( validaNome() && validaCpf() && validaEmail() && validaSenha() && validaPreenchimentoCampos()) {
+    if ( validaNome() && validaCpf() && validaEmail() && validaSenha() && gvalidaPreenchimentoCampos()) {
         
         conteudoForm1.classList.remove("d-flex");
         conteudoForm1.classList.remove("flex-colunm");

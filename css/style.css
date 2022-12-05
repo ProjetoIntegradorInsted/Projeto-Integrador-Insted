@@ -185,3 +185,76 @@ input:not(:placeholder-shown) {
 }
 
 /* Fim do Buscador de balada */
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+.avaliacao-balada {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-temperatura {
+  max-height: 64px;
+  width: auto;
+}
+
+.avaliacao-balada input {
+  display: none;
+}
+
+.avaliacao-balada label {
+  position: relative;
+  width: 0;
+  height: 128px;
+  cursor: pointer;
+  transition: 0.5s;
+  filter: grayscale(1);
+  text-align: center;
+  opacity: 0;
+}
+
+.avaliacao-balada:hover label {
+  width: 128px;
+  opacity: 0.2;
+}
+
+.avaliacao-balada input:hover + label,
+.avaliacao-balada input:checked + label {
+  filter: grayscale(0);
+  opacity: 1;
+  width: 128px;
+}
+
+.avaliacao-balada label p {
+  font-size: 24px;
+  color: rgb(136, 63, 63);
+  padding-top: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-50px) scale(0);
+  transition: 0.5s;
+}
+
+.avaliacao-balada input:hover + label p,
+.avaliacao-balada input:checked + label p {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* .text {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(0, 0, 0);
+  width: 500px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  white-space: nowrap;
+} */
