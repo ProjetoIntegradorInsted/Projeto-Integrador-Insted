@@ -26,6 +26,7 @@
         <form action="" class="formulario__cadastro" onsubmit="retornarSucesso(event)">
 
             <div class="cadastro_1 d-flex flex-column">
+                <span class="alerta__CampoInvalido"></span>
 
                 <h2 class="titulo__cadastro mt-3 ms-3">Dados Pessoais</h2>
 
@@ -34,28 +35,24 @@
                         <label class="nome__label" for="nome">Nome Completo:</label>
                         <input class="formulario__input" required type="name" id="nome">
                         <span class="alerta__nome"></span>
-                        <span class="alerta__CampoInvalido"></span>
                     </div>
 
                     <div class="mt-2 d-flex flex-column">
                         <label class="nome__label" for="cpf">CPF:</label>
                         <input class="formulario__input" required type="text" id="cpf">
                         <span class="alerta__cpfInvalido"></span>
-                        <span class="alerta__CampoInvalido"></span>
                     </div>
 
                     <div class="mt-2 d-flex flex-column">
                         <label class="nome__label" for="data">Data de Nascimento:</label>
                         <input class="formulario__input" required type="date" id="data">
                         <span class="alerta__data "></span>
-                        <span class="alerta__CampoInvalido"></span>
                     </div>
 
                     <div class="mt-2 d-flex flex-column">
                         <label class="nome__label" for="telefone">Telefone:</label>
                         <input class="formulario__input" required type="text" id="telefone"
                             placeholder="(67) 99999-9999">
-                            <span class="alerta__CampoInvalido"></span>
                     </div>
 
                     <div class="mt-2 d-flex flex-column">
@@ -70,7 +67,6 @@
                     <div class="mt-2 d-flex flex-column">
                         <label class="mt-2 d-flex flex-column" for="email">E-mail:</label>
                         <input class="formulario__input" required type="email" id="email">
-                        <span class="alerta__CampoInvalido"></span>
 
                     </div>
 
@@ -83,7 +79,6 @@
                     <div class="mt-2 d-flex flex-column">
                         <label class="mt-2 d-flex flex-column" for="campo_senha">Senha:</label>
                         <input class="formulario__input" required type="password" id="campo_senha">
-                        <span class="alerta__CampoInvalido"></span>
 
                     </div>
 

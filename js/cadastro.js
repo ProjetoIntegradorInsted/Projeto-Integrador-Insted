@@ -7,7 +7,7 @@ let campoSenha = document.querySelector("#campo_senha");
 let campoConfirmacaoSenha = document.querySelector("#confirmacao_senha")
 let campoNome = document.querySelector("#nome");
 let campoAlertaNome = document.querySelector(".alerta__nome");
-let campoAlertaCampoInvalido = document.querySelector(".alerta__campoInvalido");
+let campoAlertaCampoInvalido = document.querySelector(".alerta__CampoInvalido");
 let campoEmail = document.querySelector("#email");
 let campoConfirmacaoEmail = document.querySelector("#confirmacao_email");
 let cpf = document.querySelector("#cpf");
@@ -122,7 +122,7 @@ function validaSenha(){
 
 // CRIEI ESSA FUNÇÃO E "QUEBREI" A VALIDAÇÃO [VERIFICAR] - By: SÉRGIO 
 function validaPreenchimentoCampos(){
-    let alerta = document.querySelector(".alerta__campoInvalido");
+    let alerta = document.querySelector(".alerta__CampoInvalido");
     if ((campoNome.value == "") || (campoCpf.value == "") || (campoEmail.value == "") || (campoSenha.value == "")) {
         alerta.textContent = "Há Campos obrigatórios não preenchido(s).";
         alerta.classList.add("sucesso");
@@ -136,7 +136,7 @@ function validaPreenchimentoCampos(){
 }
 
 botaoProximo.addEventListener("click", function(){
-    if ( validaNome() && validaCpf() && validaEmail() && validaSenha() && gvalidaPreenchimentoCampos()) {
+    if ( validaNome() && validaCpf() && validaEmail() && validaSenha() && validaPreenchimentoCampos()) {
         
         conteudoForm1.classList.remove("d-flex");
         conteudoForm1.classList.remove("flex-colunm");
