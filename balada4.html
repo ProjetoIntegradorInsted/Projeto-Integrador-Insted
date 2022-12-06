@@ -58,35 +58,48 @@
             <img src="/img/baladas/balada4.png" class="card-img-top" alt="Imagem meramente ilustrativa 4">
             <div class="card-body ml-3">
                 <h5 class="card-title">Balada 4</h5>
-                <p class="card-text-balada">A segunda melhor balada da cidade contará com a participação do MC Shrek e a MC Fiona.
+                <p class="card-text-balada">A segunda melhor balada da cidade contará com a participação do MC Shrek e a
+                    MC Fiona.
                     <br>
                     <br> Endereço: Rua Jão Benedito, nº 505
                     <br> Horário: A partir das 22h
                     <br> Valor da entrada: Gratuito
-                    <br> Temperatura: <img src="/img/svg/quente.svg" class="temperaturaQuente" title="Balada quente"> <img src="/img/svg/frio.svg" class="temperaturaFria" title="Balada fria">
-                   
-                    
-                </p>
-                <p class="card-text-balada"><small class="text-muted">Evento criado pelo Usuário: <u>@Antonieta</u></small>
+                    <br> 
+                    <div class="avaliacao-balada d-grid d-flex">
+                    Temperatura:
+                    <input type="radio" name="star" id="star1" checked="checked" />
+                    <label for="star1">
+                        <img class="img-temperatura" src="/img/svg/frio.svg" />
+                        <p class="classificacao-balada">Fria</p>
+                    </label>
+
+                    <input type="radio" name="star" id="star5" />
+                    <label for="star5">
+                        <img class="img-temperatura" src="/img/svg/quente.svg" />
+                        <p class="classificacao-balada">Quente</p>
+                    </label>
+                    </p>
+                </div>
+                <p class="card-text-balada"><small class="text-muted">Evento criado pelo Usuário:
+                        <u>@Antonieta</u></small>
                 </p>
             </div>
-        </div>
 
 
-        <!-- bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            crossorigin="anonymous"></script>
-        <!-- custom js -->
-        <script>
-            var menu_btn = document.querySelector("#menu-btn");
-            var sidebar = document.querySelector("#sidebar");
-            var container = document.querySelector(".my-container");
-            menu_btn.addEventListener("click", () => {
-                sidebar.classList.toggle("active-nav");
-                container.classList.toggle("active-cont");
-            });
-        </script>
+            <!-- bootstrap js -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+                crossorigin="anonymous"></script>
+            <!-- custom js -->
+            <script>
+                var menu_btn = document.querySelector("#menu-btn");
+                var sidebar = document.querySelector("#sidebar");
+                var container = document.querySelector(".my-container");
+                menu_btn.addEventListener("click", () => {
+                    sidebar.classList.toggle("active-nav");
+                    container.classList.toggle("active-cont");
+                });
+            </script>
 </body>
 
 </html>
