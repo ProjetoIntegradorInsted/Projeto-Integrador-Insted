@@ -48,10 +48,11 @@
                     </div>
 
                     <div class="mt-2 d-flex flex-column">
-                        <label class="nome__label" for="telefone">Telefone:</label>
+                        <label class="nome__label" for="telefone">Telefone:*</label>
                         <input class="formulario__input" required type="text" id="telefone"
                             placeholder="(67) 99999-9999">
                     </div>
+                    <div class="textoOptativo" style="font-size: 10px;">*Opcional</div>
 
                     <div class="mt-2 d-flex flex-column">
                         <label class="nome__label" for="genero">Gênero:</label>
@@ -83,6 +84,7 @@
                         <input class="formulario__input" required type="password" id="confirmacao_senha">
                         <span class="alerta__senha"></span>
                     </div>
+                    
 
                 </div>
                 <div class="align-self-center mt-3 mb-3">
@@ -98,8 +100,9 @@
                 <h2 class="titulo__cadastro mt-3">Endereço</h2>
 
                 <div class="mt-2 d-flex flex-column w-75">
-                    <label class="estadosBrasil" for="informar_endereco">Estado</label>
+                    <label class="estadosBrasil" for="informar_endereco">Estado:*</label>
                     <select class="formulario__input" id="estado" name="estado">
+                        <option value="null" selected></option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
                         <option value="AP">Amapá</option>
@@ -129,29 +132,38 @@
                         <option value="TO">Tocantins</option>
                         <option value="EX">Estrangeiro</option>
                     </select>
-
+                    <div class="textoOptativo" style="font-size: 10px;">*Opcional</div>
+                    
 
                     <div class="mt-2 d-flex flex-column">
-                        <label class="nome__label" for="informar_endereco_municipio">Município:</label>
+                        <label class="nome__label" for="informar_endereco_municipio">Município:*</label>
                         <input class="formulario__input" required type="text" id="municipio">
                     </div>
+                    <div class="textoOptativo" style="font-size: 10px;">*Opcional</div>
+
                     <div class="mt-2 d-flex flex-column">
-                        <label class="nome__label" for="informar_endereco_logradouro">Logradouro:</label>
+                        <label class="nome__label" for="informar_endereco_logradouro">Logradouro:*</label>
                         <input class="formulario__input" required type="text" id="Logradouro">
                     </div>
+                    <div class="textoOptativo" style="font-size: 10px;">*Opcional</div>
+
                     <div class="mt-2 d-flex flex-column">
-                        <label class="nome__label" for="informar_endereco_numero">Número:</label>
+                        <label class="nome__label" for="informar_endereco_numero">Número:*</label>
                         <input class="formulario__input" required type="text" id="numero">
                     </div>
+                    <div class="textoOptativo" style="font-size: 10px;">*Opcional</div>
+
                     <div class="mt-2 d-flex flex-column">
-                        <label class="nome__label" for="informar_endereco_complemento">Complemento:</label>
+                        <label class="nome__label" for="informar_endereco_complemento">Complemento:*</label>
                         <input class="formulario__input" type="text" id="Complemento">
                     </div>
+                    <div class="textoOptativo" style="font-size: 10px;">*Opcional</div>
+
                     <div class="mt-2 d-flex flex-column">
-                        <label class="nome__label" for="informar_endereco_cep">CEP:</label>
+                        <label class="nome__label" for="informar_endereco_cep">CEP:*</label>
                         <input class="formulario__input" required type="text" id="cep">
                     </div>
-
+                    <div class="textoOptativo" style="font-size: 10px;">*Opcional</div>
 
                 </div>
 

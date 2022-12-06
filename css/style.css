@@ -1,7 +1,16 @@
+:root{
+  --rosa: #F752E0;
+  --azul: #004AAD;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.logoDoApp{
+border-radius: 50%;
 }
 
 body {
@@ -14,7 +23,7 @@ body {
   height: 100%;
   position: fixed;
   margin-left: -300px;
-  background-color: rgb(116, 9, 84);
+  background-color: var(--azul) ;
   transition: 0.5s;
 }
 
@@ -39,7 +48,7 @@ body {
 
 #menu-btn {
   background-color: #10090100;
-  color: rgb(116, 9, 84);
+  color: var(--azul);
   margin-left: -62px;
 }
 
@@ -60,7 +69,7 @@ body {
   border-radius: 2rem;
   padding: 2px 15px;
   margin: 5px;
-  background-color:rgb(116, 9, 84);
+  background-color:var(--azul);
   color: white;
   border: none;
   text-decoration: none;
@@ -74,7 +83,7 @@ body {
   border-radius: 2rem;
   padding: 2px 15px;
   margin: 5px;
-  background-color:rgb(116, 9, 84);
+  background-color:var(--rosa);
   color: white;
   text-decoration: none;
 }
@@ -87,7 +96,7 @@ body {
   border-radius: 2rem;
   padding: 2px 15px;
   margin: 5px;
-  background-color:rgb(116, 9, 84);
+  background-color:var(--azul);
   color: white;
   text-decoration: none;
 }
@@ -96,7 +105,7 @@ body {
   border-radius: 2rem;
   padding: 2px 15px;
   margin: 5px;
-  background-color:rgb(116, 9, 84);
+  background-color:var(--rosa);
   color: white;
   text-decoration: none;
 }
@@ -110,19 +119,22 @@ body {
   max-width: 350px;
 }
 
-.selecionarBalada{
-  text-decoration: none;
-  color: black;
-}
 
 .semConta{
   border-radius: 2rem;
   padding: 2px 15px;
   margin: 5px;
-  background-color:rgb(116, 9, 84);
+  margin-left: 5px;
+  background-color:var(--azul);
   color: white;
   text-decoration: none;
 }
+
+.semConta:hover{
+  background-color: transparent;
+  color: black;
+}
+
 .imagemPerfil{
   border-radius: 100rem;
   max-width: 150px;
@@ -192,6 +204,15 @@ body {
   transform: translateY(0) scale(1);
 }
 
+a:hover{
+  color: var(--rosa);
+}
+
+a{
+  color: var(--azul);
+  text-decoration: none;
+
+}
 
 
 /* .text {

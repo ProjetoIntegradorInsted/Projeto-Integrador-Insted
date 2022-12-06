@@ -95,6 +95,7 @@ function validaEmail() {
         return true;
     }
 }
+
 function validaNome() {
     let alerta = document.querySelector(".alerta__nome");
     if ((campoNome.value).trim() == "" || campoNome.value == null) {
