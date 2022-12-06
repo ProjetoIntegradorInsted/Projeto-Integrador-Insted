@@ -1,5 +1,6 @@
 let conteudoForm1 = document.querySelector(".cadastro_1");
 let conteudoForm2 = document.querySelector(".cadastro_2");
+let cadastroFinalizado = document.querySelector(".cadastro_esconder");
 let botaoProximo = document.querySelector("#botao__proximo");
 let campoCpf = document.querySelector("#cpf");
 let botaoFinalizar = document.querySelector("#botao__finalizar");
@@ -8,6 +9,7 @@ let campoSenha = document.querySelector("#campo_senha");
 let campoConfirmacaoSenha = document.querySelector("#confirmacao_senha")
 let campoNome = document.querySelector("#nome");
 let campoAlertaNome = document.querySelector(".alerta__nome");
+let campoAlertaCadastrado = document.querySelector(".alerta__cadastrado");
 let campoEmail = document.querySelector("#email");
 let campoConfirmacaoEmail = document.querySelector("#confirmacao_email");
 let cpf = document.querySelector("#cpf");
@@ -143,16 +145,15 @@ botaoProximo.addEventListener("click", function () {
         conteudoForm1.classList.remove("flex-colunm");
         conteudoForm2.classList.remove("esconder");
         conteudoForm1.classList.add("esconder");
-    }
+    } 
 })
 
 
 botaoFinalizar.addEventListener("click", function () {
     if (validaNome() && validaCpf() && validaEmail() && validaSenha() && validaPreenchimentoCampos()) {
-
+        cadastroFinalizado.classList.remove("esconder");
         conteudoForm1.classList.remove("d-flex");
         conteudoForm1.classList.remove("flex-colunm");
-        conteudoForm2.classList.remove("esconder");
-        conteudoForm1.classList.add("esconder");
+        conteudoForm2.classList.add("esconder");
     }
 });
