@@ -12,7 +12,6 @@ let campoAlertaCampoInvalido = document.querySelector(".alerta__CampoInvalido");
 let campoEmail = document.querySelector("#email");
 let campoConfirmacaoEmail = document.querySelector("#confirmacao_email");
 let cpf = document.querySelector("#cpf");
-let campoAlertaCampoInvalido = document.querySelector(".alerta__CampoInvalido");
 
 function validaCpf() {
     let mensagem = document.querySelector(".alerta__cpfInvalido");
