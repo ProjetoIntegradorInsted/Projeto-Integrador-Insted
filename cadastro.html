@@ -45,7 +45,6 @@
                     <div class="mt-2 d-flex flex-column">
                         <label class="nome__label" for="data">Data de Nascimento:</label>
                         <input class="formulario__input" required type="date" id="data">
-                        <span class="alerta__data "></span>
                     </div>
 
                     <div class="mt-2 d-flex flex-column">
@@ -71,7 +70,7 @@
                     <div class="mt-2 d-flex flex-column">
                         <label class="mt-2 d-flex flex-column" for="confirmacao_email">Confirmação de e-mail:</label>
                         <input class="formulario__input" required type="email" id="confirmacao_email">
-                        <span class="alerta__email alerta"></span>
+                        <span class="alerta__email"></span>
                     </div>
 
                     <div class="mt-2 d-flex flex-column">
@@ -82,7 +81,7 @@
                     <div class="mt-2 d-flex flex-column">
                         <label class="mt-2 d-flex flex-column" for="confirmacao_senha">Confirmar Senha:</label>
                         <input class="formulario__input" required type="password" id="confirmacao_senha">
-                        <span class="alerta__senha alerta"></span>
+                        <span class="alerta__senha"></span>
                     </div>
 
                 </div>
@@ -90,12 +89,15 @@
                     <a href="/paginaInical.html" class="botaoVoltar botao__voltar">Voltar</a>
                     <a class="botaoProximo mt-2 ms-2" id="botao__proximo">Continuar</a>
                 </div>
+
+                <span class="alerta__CampoInvalido"></span>
+
             </div>
 
-            <div class="cadastro_2 esconder ms-3">
-                <h2 class="titulo__cadastro mt-3 ms-3">Endereço</h2>
+            <div class="cadastro_2 esconder ms-3 align-items-center">
+                <h2 class="titulo__cadastro mt-3">Endereço</h2>
 
-                <div class="mt-2 d-flex flex-column">
+                <div class="mt-2 d-flex flex-column w-75">
                     <label class="estadosBrasil" for="informar_endereco">Estado</label>
                     <select class="formulario__input" id="estado" name="estado">
                         <option value="AC">Acre</option>
@@ -168,7 +170,7 @@
             </div>
         </form>
 
-        
+
     </main>
 
 

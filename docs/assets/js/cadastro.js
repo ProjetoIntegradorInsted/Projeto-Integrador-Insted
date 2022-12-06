@@ -121,6 +121,7 @@ function validaSenha() {
     }
 }
 
+
 function validaPreenchimentoCampos() {
     let alerta = document.querySelector(".alerta__CampoInvalido");
     if ((campoNome.value == "") || (campoCpf.value == "") || (campoEmail.value == "") || (campoSenha.value == "")) {
@@ -145,4 +146,3 @@ botaoProximo.addEventListener("click", function () {
         conteudoForm1.classList.add("esconder");
     }
 });
-
