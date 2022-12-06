@@ -51,7 +51,6 @@ body {
 .formulario__input {
   border-radius: 2rem;
   padding: 2px 20px;
-  max-width: 350px;
 }
 .esconder {
   display: none;
