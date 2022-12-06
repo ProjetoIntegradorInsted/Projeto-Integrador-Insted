@@ -119,8 +119,22 @@ function validaSenha(){
     }
 }
 
+function validaPreenchimentoCampos(){
+    let alerta = document.querySelector(".alerta__CampoInvalido");
+    if ((campoNome.value == "") || (campoCpf.value == "") || (campoEmail.value == "") || (campoSenha.value == "")) {
+        alerta.textContent = "Há Campos obrigatórios não preenchido(s).";
+        alerta.classList.add("sucesso");
+        alerta.classList.add("erro");
+        return false;
+    } else {
+        alerta.classList.remove("erro");
+        alerta.classList.add("sucesso");
+        return true;
+    }
+}
+
 botaoProximo.addEventListener("click", function(){
-    if ( validaNome() && validaCpf() && validaEmail() && validaSenha()) {
+    if ( validaNome() && validaCpf() && validaEmail() && validaSenha() && validaPreenchimentoCampos()) {
         
         conteudoForm1.classList.remove("d-flex");
         conteudoForm1.classList.remove("flex-colunm");
