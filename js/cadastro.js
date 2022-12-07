@@ -156,5 +156,10 @@ botaoFinalizar.addEventListener("click", function () {
         conteudoForm1.classList.remove("d-flex");
         conteudoForm1.classList.remove("flex-colunm");
         conteudoForm2.classList.add("esconder");
+        
+        setTimeout(() => {
+            location.href = "./paginaInicialLogado.html";
+        }, 1000);
+        
     }
 });
