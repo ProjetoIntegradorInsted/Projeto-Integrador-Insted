@@ -15,3 +15,10 @@ botaoSair.addEventListener("click", () => {
     return false;
 });
 
+let botaoVoltar = document.querySelector("#botaoVoltar");
+
+botaoVoltar.addEventListener("click", () => {
+    location.href = "../paginaInicialLogado.html";
+    
+    return false;
+});
