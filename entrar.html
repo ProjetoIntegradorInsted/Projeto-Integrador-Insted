@@ -20,8 +20,9 @@
 
 <body style="background-color:rgba(234, 228, 231, 1);">
 
-    <form>
-        <p class="mb-3 mt-3 ms-3 d-flex flex-column"> <b> Usuário não logado. </b> <br>Para acessar esta funcionalidade, informe e-mail e senha cadastrados </p>
+    <form action="" onsubmit="retornarSucesso(event)">
+        <p class="mb-3 mt-3 ms-3 d-flex flex-column"> <b> Usuário não logado. </b> <br>Para acessar esta funcionalidade,
+            informe e-mail e senha cadastrados </p>
         <div class="mb-3 mt-3 ms-3 d-flex flex-column">
             <label for="campoEmailLogar" class="campoLogar">E-mail</label>
             <input type="email" class="campoLogar" id="campoEmailLogar" aria-describedby="emailHelp">
@@ -38,7 +39,7 @@
             <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
         </div>
 
-        <button type="submit" class="btn botaoLogar ms-3">Entrar</button>
+        <button type="submit" class="btn botaoLogar ms-3" id="botaoEntrar">Entrar</button>
 
         <div class="d-flex flex-row mt-3 justify-content-end align-items-center">
             <p class="m-0">Ainda não tem conta ?</p>
@@ -47,6 +48,8 @@
 
     </form>
 
+    <script src="./js/cadastro.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
