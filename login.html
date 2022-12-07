@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <script src="./js/login.js" defer></script>
 
-    <!-- bootstrap 5 css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <script src="./js/login.js" defer></script>
 
-    <!-- css -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  <!-- bootstrap 5 css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-  <header>
-    <h1 class="login mt-5"> Login </h1>
-  </header>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-  <body style="background-color:rgba(234, 228, 231, 1);">
-    <form id="formLogin">
-      
-      <div class="mb-3 mt-3 ms-3 d-flex flex-column">
-        <label for="campoEmailLogar" class="campoLogar">E-mail</label>
-        <input type="email" class="campoLogar" id="campoEmailLogar" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
-      </div>
-      
-      <div class="mb-3 mt-3 ms-3 d-flex flex-column ">
-        <label for="campoSenhaLogar" class="campoLogar">Senha</label>
-        <input type="password" class="campoLogar" id="campoSenhaLogar">
-      </div>
-      
-      <div class="mb-3 mt-3 ms-3">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
-      </div>
-      <button type="submit" class="btn botaoLogar ms-3" id="botaoEntrar">Entrar</button>
-    </form>
-  </body>
+<header>
+  <h1 class="login mt-5"> Login </h1>
+</header>
 
-  
+<body style="background-color:rgba(234, 228, 231, 1);">
+  <form action="" id="formLogin" onsubmit="retornarSucesso(event)">
+
+    <div class="mb-3 mt-3 ms-3 d-flex flex-column">
+      <label for="campoEmailLogar" class="campoLogar">E-mail</label>
+      <input type="email" class="campoLogar" id="campoEmailLogar" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+    </div>
+
+    <div class="mb-3 mt-3 ms-3 d-flex flex-column ">
+      <label for="campoSenhaLogar" class="campoLogar">Senha</label>
+      <input type="password" class="campoLogar" id="campoSenhaLogar">
+    </div>
+
+    <div class="mb-3 mt-3 ms-3">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+    </div>
+    <button type="submit" class="btn botaoLogar ms-3" id="botaoEntrar">Entrar</button>
+  </form>
+
+  <script src="./js/cadastro.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+
+
 </html>
