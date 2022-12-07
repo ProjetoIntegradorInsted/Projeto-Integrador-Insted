@@ -30,7 +30,7 @@
                 <!-- Imagem criada pela I.A DALL-E -->
                 <img src="./docs/assets/img/fotoPerfil/image1.jpg" class="imagemPerfil mx-auto d-block" alt="Imagem do perfil">
                 <div class="text-center">
-                    <button type="button" class="btn btn mt-2" style="background-color:rgba(234, 228, 231, 1);"> Editar
+                    <button type="button" class="btn btn mt-2 w-75" style="background-color:rgba(234, 228, 231, 1);"> Editar
                         perfil
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-pencil" viewBox="0 0 16 16">
@@ -39,6 +39,7 @@
                             </path>
                         </svg>
                     </button>
+                    <button type="button" id="botaoSair" class="btn btn mt-2 w-75" style="background-color:rgba(234, 228, 231, 1);">Sair</button>
                 </div>
             </figure>
         </ul>
@@ -93,15 +94,7 @@
                 integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
                 crossorigin="anonymous"></script>
             <!-- custom js -->
-            <script>
-                var menu_btn = document.querySelector("#menu-btn");
-                var sidebar = document.querySelector("#sidebar");
-                var container = document.querySelector(".my-container");
-                menu_btn.addEventListener("click", () => {
-                    sidebar.classList.toggle("active-nav");
-                    container.classList.toggle("active-cont");
-                });
-            </script>
+            <script src="./js/sidebar.js"></script>
 </body>
 
 </html>
